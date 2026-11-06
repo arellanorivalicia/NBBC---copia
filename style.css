@@ -1,0 +1,613 @@
+/*HEADER*/
+:root
+{
+    --pink:#bd859c
+}
+
+
+*
+{
+margin: 0%; padding: 0%;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+outline: none; border: none;
+text-decoration: none;
+text-transform: capitalize;
+transition: 2.s linear;
+}
+
+html
+{
+    font-size: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section
+{
+    padding: 2rem 9%;
+}
+
+.btn
+{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: rgb(255, 255, 255);
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btn:hover
+{
+    background: #ff96c9;
+}
+header
+{
+    position: fixed;
+    top: 0%; left: 0%; right: 0%;
+    background: #ffeff9;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgb(0, 0, 0,.1);
+}
+
+.logo-img 
+{
+  height: 5rem;        
+  vertical-align: middle;
+  margin-right: 10px; 
+}
+
+header .logo
+{
+    font-size: 2rem;
+    color: #ff1880 ;
+    font-weight: bolder;
+}
+
+header .navbar a
+{
+font-size: 1.5rem;
+padding: 0 1.5rem;
+color: #bd859c;
+}
+
+header .navbar a:hover
+{
+    color:#fa0066;
+}
+
+header .icons a
+{
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: #ff569c;
+}
+
+header .icons a:hover
+{
+    color:#fa0066;
+}
+
+header #toggler
+{
+    display: none;
+}
+header .fa-bars
+{
+    font-size: 3rem;
+    color: #ff569c;
+    border-radius: .5rem;
+    padding: 5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+/*HEADER*/
+
+/*HOME*/
+.home
+{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../IMAGENES/HOME.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content
+{
+   max-width: 50rem;
+}
+
+.home .content h3
+{
+    font-size: 3.5rem;
+    color: #fa0066;
+}
+
+.home .content span
+{
+    font-size: 2rem;
+    color: #580024;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p
+{
+    font-size: 1rem;
+    color: #4b3d3e;
+    padding: 1rem 0;
+    line-height: 1.5;
+     text-transform: none;
+}
+/*HOME*/
+
+/*ICONOS*/
+.icons-container
+{
+    background: #f9f9f9;
+    display:flex;
+    flex-wrap:wrap;
+    gap:3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.icons-container .info
+{
+    background: #ffceec;
+    border: .5rem #eec1dd;
+    border-radius: 3rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items:center;
+    flex: 1 1 25rem;
+}
+
+.icons-container .info img
+{
+    color: #fa0066;
+    height: 4rem;
+    margin-right: 2rem;
+}
+
+.icons-container .info h3
+{
+       
+
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 2rem;
+  font-style: normal;
+}
+/*ICONOS*/
+
+/*SERVICIOS*/
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.titulo-servicios
+{
+     color: var(--pink); 
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+  text-align: center;
+}
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 250px;
+}
+
+.texto a {
+  text-decoration: none;
+  color: #b94b79;
+}
+
+.texto a:hover h2 {
+  color: #fa0066;
+}
+
+.circulo {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.circulo:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+/*SERVICIOS*/
+
+/*WHATSAPP*/
+.whatsapp-float {
+     position: fixed;
+  bottom: 40px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  display: flex;                  
+  align-items: center;           
+  justify-content: center;       
+  font-size: 4rem;             
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 100;
+  transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+ .whatsapp-float i
+  {
+   font-size: 3rem !important;
+  }
+
+/*WHATSAPP*/
+
+/*FOOTER*/
+    .footer {
+  background-color: #ffd6e0;
+  color: #d81b60;
+  padding: 40px 20px 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  border-top: 3px solid #eb7993;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.footer-section h3 {
+  color: #d81b60;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footer-section a {
+  display: block;
+  color: #555;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #d81b60;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.footer .social a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #d81b60;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social a i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+
+.footer .social a:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 10px 0;
+  color: #aaa;
+  font-size: 14px;
+}
+
+
+.footer-section.contact p {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  color: #555;
+}
+
+.footer-section.contact i {
+  margin-right: 10px;
+  color: #d81b60;
+  min-width: 20px;
+  text-align: center;
+}
+/*FOOTER*/
+
+/*SOBRE NOSOTROS*/
+.sobre-nosotros {
+    padding: 4rem 9%;
+    background-color: #f9f9f9; 
+}
+
+.sobre-nosotros .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.imagen-sobre-nosotros {
+    flex: 1 1 40rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.imagen-sobre-nosotros img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenido-sobre-nosotros {
+    flex: 1 1 40rem;
+}
+
+.contenido-sobre-nosotros h2 {
+    color: var(--pink); 
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+     text-transform: none;
+}
+
+.contenido-sobre-nosotros .descripcion {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.contenido-sobre-nosotros p 
+{
+   text-transform: none;
+    color: #777;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.contenido-sobre-nosotros .caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contenido-sobre-nosotros .caracteristica {
+    flex: 1 1 15rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+.contenido-sobre-nosotros .caracteristica i {
+    color: var(--pink);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contenido-sobre-nosotros .caracteristica h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-transform: none;
+}
+
+.contenido-sobre-nosotros .caracteristica p {
+    color: #777;
+    font-size: 0.9rem;
+    line-height: 1.6;
+     text-transform: none;
+}
+
+.contenido-sobre-nosotros .btn {
+    margin-top: 2rem;
+}
+/*SOBRE NOSOTROS*/
+
+/*RESPONSIVE HEADER-HOME*/
+@media (max-width:75%)
+{
+  html
+{
+    font-size: 55%;
+}
+ header
+ {
+    padding: 2rem;
+ }
+}
+@media (max-width:67%)
+{
+  html
+{
+    font-size: 55%;
+}
+ header
+ {
+    padding: 2rem;
+ }
+}
+@media (max-width:991px)
+{
+  html
+{
+    font-size: 55%;
+}
+ header
+ {
+    padding: 2rem;
+ }
+}
+@media (max-width:768px)
+{
+    header .fa-bars
+    {
+        display: block;
+    }
+    header .navbar
+    {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header #toggler:checked ~ .navbar
+    {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a
+    {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+}
+
+@media (max-width:450px)
+{
+  html
+{
+    font-size: 50%;
+}
+}
+
+
+
+@media (max-width:616px)
+{
+  html
+{
+    font-size: 45%;
+}
+}
+/*RESPONSIVE HEADER-HOME*/
+
+/*SERVICIOS RESPONSIVE*/
+@media (max-width: 768px) {
+  .circulo {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .texto {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .circulo {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+}
+/*SERVICIOS RESPONSIVE*/
+
+/*FOOTER RESPONSIVE*/
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 25px;
+  }
+
+  .footer .social a {
+    margin: 0 10px;
+  }
+}
+/*FOOTER RESPONSIVE*/
+
+/*SOBRE NOSOTROS RESPONSIVE*/
+@media (max-width: 768px) {
+    .sobre-nosotros .container {
+        flex-direction: column; 
+    }
+
+    .imagen-sobre-nosotros {
+        width: 80%;
+        margin: 0 auto 2rem;
+    }
+
+    .contenido-sobre-nosotros {
+        text-align: center; 
+    }
+
+    .contenido-sobre-nosotros .caracteristicas {
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 450px) {
+    .contenido-sobre-nosotros h2 {
+        font-size: 2rem;
+    }
+
+    .contenido-sobre-nosotros .caracteristica {
+        flex-basis: 100%; 
+    }
+}
+/*SOBRE NOSOTROS RESPONSIVE*/
